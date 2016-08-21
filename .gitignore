@@ -1,2 +1,8 @@
 /forstaspelet/forstaspelet/Temp/
 /forstaspelet/forstaspelet/Library/
+
+*.sln
+*.csproj
+*.unityproj
+*.pidb
+*.userprefs
