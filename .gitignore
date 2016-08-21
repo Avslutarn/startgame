@@ -1,8 +1,2 @@
-
-*.sln
-*.csproj
-*.unityproj
-*.pidb
-*.userprefs
 Library
 Temp
