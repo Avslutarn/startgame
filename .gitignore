@@ -1,8 +1,7 @@
-/forstaspelet/TheGame/Temp/
-/forstaspelet/TheGame/Library/
 
 *.sln
 *.csproj
 *.unityproj
 *.pidb
 *.userprefs
+Library
