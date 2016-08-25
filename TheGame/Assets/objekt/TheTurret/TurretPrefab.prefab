@@ -141,6 +141,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000011357144318}
+  - 114: {fileID: 114000011330034606}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -912,6 +913,19 @@ MonoBehaviour:
   speed: 200
   minRotation: 5
   maxRotation: 25
+--- !u!114 &114000011330034606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012234219818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fadf7f04f498acb40a39d04867438bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 54000011816904952, guid: 25ce12d0480fc5f4f8045ad263021bc9, type: 2}
+  force: 1000
 --- !u!114 &114000013594576710
 MonoBehaviour:
   m_ObjectHideFlags: 1
