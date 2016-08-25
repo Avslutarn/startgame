@@ -1,40 +1,39 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CreateCannonBall : MonoBehaviour {
+public class CreateCannonBall : MonoBehaviour
+{
 
     public Rigidbody ball;
     public float force;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+    void Start()
+    {
 
-        if(Input.GetButtonDown("Fire1"))
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
         {
             Debug.Log("Ball fired");
             FireBall();
         }
-	
-	}
+
+    }
 
     void FireBall()
     {
-        GameObject KanonMynning = GameObject.Find("KanonMynning");
-        GameObject GunNeck2 = GameObject.Find("GunNeck2");
+        var trans = GetComponent<Transform>();
 
-        Rigidbody ballClone = (Rigidbody) Instantiate(
-            ball, 
-            KanonMynning.transform.position, 
-            GunNeck2.transform.rotation
+        Rigidbody ballClone = (Rigidbody)Instantiate(
+            ball,
+            trans.position,
+            trans.rotation
         );
 
-        ballClone.transform.rotation = GunNeck2.transform.rotation;
-
-        ballClone.AddForce(Vector3.forward * force * Time.deltaTime);
+        ballClone.AddRelativeForce(Vector3.forward * force);
     }
 }
