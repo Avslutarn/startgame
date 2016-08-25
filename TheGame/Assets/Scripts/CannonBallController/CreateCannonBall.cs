@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class createCannonBall : MonoBehaviour {
+public class CreateCannonBall : MonoBehaviour {
 
     public Rigidbody ball;
-    public float force = 10f;
+    public float force;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +16,7 @@ public class createCannonBall : MonoBehaviour {
 
         if(Input.GetButtonDown("Fire1"))
         {
+            Debug.Log("Ball fired");
             FireBall();
         }
 	
@@ -23,11 +24,17 @@ public class createCannonBall : MonoBehaviour {
 
     void FireBall()
     {
-        GameObject gunNeck2 = GameObject.Find("GunNeck2");
-        Vector3 gunNeck2Front = gunNeck2.transform.position;
-        Debug.Log(gunNeck2Front);
-        Debug.Log(gunNeck2.);
-        Rigidbody ballClone = (Rigidbody) Instantiate(ball, gunNeck2Front, gunNeck2.transform.rotation);
-        ballClone.AddForce(gunNeck2.transform.position * force);
+        GameObject KanonMynning = GameObject.Find("KanonMynning");
+        GameObject GunNeck2 = GameObject.Find("GunNeck2");
+
+        Rigidbody ballClone = (Rigidbody) Instantiate(
+            ball, 
+            KanonMynning.transform.position, 
+            GunNeck2.transform.rotation
+        );
+
+        ballClone.transform.rotation = GunNeck2.transform.rotation;
+
+        ballClone.AddForce(Vector3.forward * force * Time.deltaTime);
     }
 }
