@@ -27,7 +27,6 @@ public class RopeMovement : MonoBehaviour {
                     var direction = hit.point - rb.position;
                     direction = direction / direction.magnitude;
                     rb.AddForce(direction * force);
-                    Debug.Log("COLLISION!!!");
                 }
             }
         }
