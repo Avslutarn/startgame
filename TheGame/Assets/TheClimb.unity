@@ -415,11 +415,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4000010717179348, guid: 5942d7cbcf4bc4a49b143d7937c4d0ee, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.17712627
       objectReference: {fileID: 0}
     - target: {fileID: 4000010717179348, guid: 5942d7cbcf4bc4a49b143d7937c4d0ee, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.014823675
       objectReference: {fileID: 0}
     - target: {fileID: 4000010717179348, guid: 5942d7cbcf4bc4a49b143d7937c4d0ee, type: 2}
       propertyPath: m_LocalPosition.z
@@ -474,6 +474,10 @@ Prefab:
         type: 2}
       propertyPath: m_ConnectedAnchor.z
       value: 0.41890407
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010717179348, guid: 5942d7cbcf4bc4a49b143d7937c4d0ee, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5942d7cbcf4bc4a49b143d7937c4d0ee, type: 2}
@@ -1579,7 +1583,6 @@ GameObject:
   - 33: {fileID: 1594548082}
   - 136: {fileID: 1594548081}
   - 23: {fileID: 1594548080}
-  - 54: {fileID: 1594548079}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -1593,28 +1596,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1594548077}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1523, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.0067, z: 0}
   m_LocalScale: {x: 0.36, y: 0.01, z: 0.36}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 2013514163}
-  m_RootOrder: 1
---- !u!54 &1594548079
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1594548077}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Father: {fileID: 2013192666}
+  m_RootOrder: 2
 --- !u!23 &1594548080
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2030,9 +2018,9 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1936611187}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2013514163 stripped
+--- !u!4 &2013192666 stripped
 Transform:
-  m_PrefabParentObject: {fileID: 4000010717179348, guid: 5942d7cbcf4bc4a49b143d7937c4d0ee,
+  m_PrefabParentObject: {fileID: 4000012118813642, guid: 5942d7cbcf4bc4a49b143d7937c4d0ee,
     type: 2}
   m_PrefabInternal: {fileID: 314920738}
 --- !u!1 &2086435578
@@ -2197,7 +2185,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2108907633}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 4, y: 3.159, z: 0}
+  m_LocalPosition: {x: 4.1771264, y: 3.1738238, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_Children: []
