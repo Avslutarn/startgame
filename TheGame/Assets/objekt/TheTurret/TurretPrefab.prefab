@@ -208,6 +208,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010561487792}
+  - 114: {fileID: 114000010089266780}
   m_Layer: 0
   m_Name: KanonMynning
   m_TagString: Untagged
@@ -318,7 +319,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013772472106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.016, z: 1.469}
+  m_LocalPosition: {x: 0, y: -0.02, z: 2.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -845,7 +846,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000011015544146}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -869,7 +870,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000010694590808}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -881,7 +882,7 @@ BoxCollider:
   m_GameObject: {fileID: 1000011572725850}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -899,6 +900,19 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014162076918}
   m_Enabled: 1
+--- !u!114 &114000010089266780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013772472106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fadf7f04f498acb40a39d04867438bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 54000011816904952, guid: 25ce12d0480fc5f4f8045ad263021bc9, type: 2}
+  force: 2000
 --- !u!114 &114000011073614160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -919,13 +933,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012234219818}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fadf7f04f498acb40a39d04867438bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ball: {fileID: 54000011816904952, guid: 25ce12d0480fc5f4f8045ad263021bc9, type: 2}
-  force: 1000
+  force: 200000
 --- !u!114 &114000013594576710
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -953,7 +967,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1000013429671774}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -966,7 +980,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1000014132700096}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -979,7 +993,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1000013973976414}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -992,7 +1006,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1000010841028096}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -1005,7 +1019,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1000010600104946}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
