@@ -4,16 +4,19 @@ using System.Collections;
 [ExecuteInEditMode]
 public class CameraPosition : MonoBehaviour {
 
-    Transform transform;
+    public float x;
+    public float y;
+    public float z;
+    Transform trans;
     Transform playerTrans;
 	// Use this for initialization
 	void Start () {
-        transform = GetComponent<Transform>();
+        trans = GetComponent<Transform>();
         playerTrans = GameObject.FindWithTag("Player").GetComponent<Transform>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = playerTrans.position + new Vector3(4, 2, 0);
+        trans.position = playerTrans.position + new Vector3(x, y, z);
 	}
 }
